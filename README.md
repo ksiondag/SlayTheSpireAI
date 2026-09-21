@@ -25,12 +25,23 @@ The implementation in its various forms:
 * Model training on the GPU implementation of Slay the Spire
 * Evaluation on the headless and main game
 
+## Decompiling Slay the Spire
+
+Slay the Spire 1 is written in Java. Go to where it is installed (on Steam
+right-click the game, manage -> browse local files), find desktop-1.0.jar,
+decompile it with [CFR](https://www.benf.org/other/cfr/), then run:
+
+```
+cd /path/to/SlayTheSpire
+java -jar /path/to/cfr/jar desktop-1.0.jar --outputdir /this/repo/decompiled
+```
+
 ## Stance on LLMs
 
 Anyone looking at my recent commit history will surely see a lot of slop.
-That is how I see LLMs, even recent frontier models. I'm fine with using
+"Slop" is how I see LLMs, even recent frontier models. I'm fine with using
 them for prototype purposes but honestly I'm very embarassed to commit
-such low-quality code and writing.
+such low-quality code and writing as much as I already have.
 
 An experiment with this project is to only let slop exist in branches tagged
 as such, as a form of Code Complete's "Throwaway Prototype". All code in other
@@ -40,4 +51,4 @@ main.
 
 ## Next Action
 
-Script that decompiles Slay the Spire.
+Script that decompiles Slay the Spire (done manually via instructions above thus far).
