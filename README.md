@@ -11,14 +11,28 @@ There is a vertical aspect to this and a horrizontal aspect to it.
 
 ### The Vertical
 
-An implementation of each piece of the Slay the Spire game.
+An implementation of each piece of the Slay the Spire game:
+
+* beginning option from Neow
+* the first battle with a starter deck
+* each card for each character
+* each encounter
+* shop
+* elites
+* bosses
+* relics
+* map
+* correct interaction between all of the above
 
 ### The Horrizontal
 
 The implementation in its various forms:
 
 * an API mod that sends commands to play the otherwise unmodified* game
-    * the RNG fixer will be the other modification
+    * *the RNG fixer will be the other modification
+    * this provides our source of truth for our vertical
+* serialization of each action in the game
+    * e.g the ability to play back a game
 * a headless implementation of Slay the Spire, still running on computer
 * a GPU implementation of Slay the Spire
     * made such that many parallel games can run together
